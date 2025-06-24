@@ -1,0 +1,154 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Reels Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Instagram Reels Survey</h1>
+    <p id="description" class="center"> <i>Thank you for finding time to take this survey</i></p>
+    <form id="survey-form">
+      <fieldset class="parent">
+        <fieldset>
+          <label for="name" id="name-label"> Name <input type="text"id="name" placeholder="Name..." required/> </label>
+          <label for="email" id="email-label"> Email <input type="email"id="email" placeholder="Email..." required/></label>
+          <label for="number" id="number-label"> How old are you? <input type="number"id="number" placeholder="Number..." min=13 max=120  required/></label>
+        </fieldset>
+        <fieldset>
+          <label>How many hours do you spend on Instagram per day?</label>
+          <select id="dropdown">
+            <option value="">(Select an option)</option>
+            <option value="1">Less than 1</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label>Do you watch reels?</label>
+          <label for="yes">
+         <input type="radio" name="watch" id="yes" class="inline" value="0"/> Yes
+          </label>
+          <label for="no"> 
+         <input type="radio" name="watch" id="no" class="inline" value="1"/> No
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>If applicable, what types of reels do you watch?</label>
+          <label for="rot"> <input id="rot" type="checkbox"class="inline" value="1"/>Brain rot</label>
+          <label for="ed"> <input id="ed" type="checkbox"class="inline" value="2"/>Educational</label>
+          <label for="skits" > <input id="skits" type="checkbox"class="inline" value="3"/>Skits/Comedy</label>
+          <label for="music" > <input id="music" type="checkbox"class="inline" value="4"/>Music</label>
+          <label for="games" > <input id="games" type="checkbox"class="inline" value="5"/>Gaming</label>
+          <label for="sports" > <input id="sports" type="checkbox"class="inline" value="6"/>Sport</label>
+        </fieldset>
+        <fieldset>
+          <label for="explain">Are you addicted to reels/instagram? Explain. (Be honest)</label>
+          <textarea id="explain" placeholder="YES... I love the rush hehe"></textarea>
+        </fieldset>
+      </fieldset>
+      <input type="submit" value="submit" id="submit">
+    </form>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  //background-color: #1b1b32;
+  //color: #f5f6f7;
+  background-image: url(https://i.pinimg.com/736x/60/61/05/606105f386b85cf1233a4826eb4d4fa9.jpg);
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, .center {
+  margin: 1em auto;
+  text-align: center;
+}
+
+.center {
+  color:#EAEAEA;
+}
+
+h1 {
+  color: #E0FFFF;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.parent {
+    background-color: rgba(255, 255, 255, 0.1); /* semi-transparent white */
+  border: 2px solid rgba(255, 255, 255, 0.4); /* visible, light border */
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 12px; /* optional: rounded corners */
+  padding: 1.5em;
+  margin: 2em auto;
+  max-width: 100%;
+}
+
+fieldset {
+  border: none;
+  //padding: 0 0;
+  //border-bottom: 3px solid #3b3b4f;
+  padding: 0.5rem 0;
+}
+
+
+
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  color: #FFFFFF;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 1em auto;
+  height: 0.5em;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.4); /* visible, light border */
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 12px; /* optional: rounded corners */
+  max-width: 100%;
+}
+
+** end of styles.css **
+
